@@ -59,7 +59,6 @@ app.use('/posts', postRoutes);
 const PORT = process.env.PORT || 6001;
 mongoose.connect(process.env.MONGO_URL, {
 }).then(() => {
-    
 
   app.listen(PORT, () => console.log(`server Port : ${PORT}`));
 // add data only one 
